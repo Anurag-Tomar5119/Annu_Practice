@@ -1,9 +1,25 @@
-const a = [1, 2, 3, 4, 5]
+function createPattern(rows) {
+    let pattern = [];
 
-const odd = a.filter(e => {
-    console.log(e);
+    for (let i = 1; i <= rows; i++) {
+        let row = [];
+        let currentNumber = i;
+        for (let j = 1; j <= i; j++) {
+            row.push(currentNumber);
+            currentNumber += rows - j;
+        }
+        pattern.push(row);
+    }
 
-    if (e / 2 != 0) return e
-});
+    return pattern;
+}
 
-console.log(odd);
+function displayPattern(pattern) {
+    for (let i = 0; i < pattern.length; i++) {
+        console.log(pattern[i].join("\t"));
+    }
+}
+
+const numRows = 5;
+const generatedPattern = createPattern(numRows);
+displayPattern(generatedPattern);
