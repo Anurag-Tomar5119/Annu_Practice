@@ -23,3 +23,4 @@ function displayPattern(pattern) {
 const numRows = 5;
 const generatedPattern = createPattern(numRows);
 displayPattern(generatedPattern);
+console.log(odd, 'data');
