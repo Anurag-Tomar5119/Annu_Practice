@@ -10,7 +10,4 @@ console.log(odd, 'data');
 
 console.log('hello');
 
-console.log('hello123');
-
-console.log('hello456');
 
