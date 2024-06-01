@@ -8,6 +8,10 @@ const odd = a.filter(e => {
 
 console.log(odd, 'data');
 
-console.log('hello');
+console.log('hello1234');
+
+
+
+console.log('hello how are u?');
 
 
