@@ -6,4 +6,4 @@ const odd = a.filter(e => {
     if (e / 2 != 0) return e
 });
 
-console.log(odd);
+console.log(odd, 'data');
